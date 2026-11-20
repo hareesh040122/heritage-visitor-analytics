@@ -1,0 +1,19 @@
+meta {
+  name: Update Visitor Entry
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/visitors/vis-1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "dwellTimeMinutes": 75,
+    "educationalQuizScore": 95,
+    "satisfactionRating": 5.0
+  }
+}
