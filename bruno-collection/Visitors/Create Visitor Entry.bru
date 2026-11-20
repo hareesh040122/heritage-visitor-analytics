@@ -1,0 +1,25 @@
+meta {
+  name: Create Visitor Entry
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/visitors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "visitorName": "Cambridge High Field Trip",
+    "groupType": "School",
+    "groupSize": 32,
+    "wingVisited": "East Wing",
+    "exhibitId": "exh-101",
+    "dwellTimeMinutes": 58,
+    "tourType": "Docent-Guided",
+    "educationalQuizScore": 91,
+    "satisfactionRating": 4.9
+  }
+}

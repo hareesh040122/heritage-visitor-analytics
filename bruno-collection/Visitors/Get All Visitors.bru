@@ -1,0 +1,16 @@
+meta {
+  name: Get All Visitors
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/visitors
+  body: none
+  auth: none
+}
+
+params:query {
+  ~wing: East Wing
+  ~groupType: School
+}
