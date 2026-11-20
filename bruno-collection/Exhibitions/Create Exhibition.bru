@@ -1,0 +1,21 @@
+meta {
+  name: Create Exhibition
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/exhibitions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Ancient Mesopotamian Cuneiform Vault",
+    "wing": "East Wing",
+    "category": "Archaeology",
+    "capacity": 175,
+    "avgDwellMinutes": 20
+  }
+}
